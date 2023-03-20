@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office Personality Quiz 2.0</title>
+    <script src="scripts/random-quotes.js" defer></script>
+    <script src="scripts/main-program.js" defer></script>
+    <script src="scripts/questions.js" defer></script>
+    <script src="scripts/what-character-am-i.js" defer></script>
+    <script src="scripts/animate-content.js" defer></script>
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/animations.css"/>
+
+</head>
+<body>
+    
+    <div id="mainSection">
+
+        <div id="landingPageSection" class="animateLandingPage">
+            <h1 id="welcome">Welcome to The Office Personality Quiz!</h1>
+            <img src="media/full-cast.webp" alt="The cast of The Office" id="fullCast">
+            <div class="quote">
+                <p id="randomQuote" class="blockQuote"></p>
+                <p id="randomQuoteSpeaker" class="quoteSpeaker"></p>
+            </div>
+
+            <div class="buttonContainer">
+            <button id="bttnStart" class="bttnAnimated">Start Quiz!</button>
+            </div>
+
+        </div>
+
+        <div id="quizContainerSection" class="animateQuizContainer">
+            
+            <div id="questionNumber"></div>
+            
+            <div id="questionContent"></div>
+            
+            <div id="answersContainer">
+            <!-- first answer -->
+            <label class="answer" id="answer1">
+                    <!-- this is the radio button -->
+                <input id="radioOption1" type="radio" name="option" value="" />
+                    <!-- this will be the label for the radio button -->
+                <span class="option1" id="textOption1"></span>
+            </label>
+
+            <!-- second answer -->
+            <label class="answer" id="answer2">
+                <!-- this is the radio button -->
+            <input id="radioOption2" type="radio" name="option" value="" />
+                <!-- this will be the label for the radio button -->
+            <span class="option1" id="textOption2"></span>
+            </label>
+
+            <!-- third answer -->
+            <label class="answer" id="answer3">
+                <!-- this is the radio button -->
+            <input id="radioOption3" type="radio" name="option" value="" />
+                <!-- this will be the label for the radio button -->
+            <span class="option1" id="textOption3"></span>
+            </label>
+            </div>
+            
+            <div class="buttonContainer">
+            <button id="bttnEndQuiz" class="bttnAnimated">Leave Quiz</button>
+            <button id="bttnNextQuestion" class="bttnAnimated">Next Question</button>
+            
+            </div>
+        
+        </div>
+
+        <div id="finishQuizSection" class="animateFinishQuizSection">
+            <h1 id="getResults">And your character is...</h1>
+            <div id="finishQuizBttnContainer" class="buttonContainer">
+                <button id="bttnFinishQuiz" class="bttnAnimated">Get Results!</button>
+                <button id = "retakeQuiz01" class="bttnAnimated">Retake Quiz!</button>
+            </div>
+        </div>
+        
+        <div id="resultsContainerSection" class="animateResultsContainer">
+            <div id="finalCharacter"></div>
+            <div class="quote">
+                <p id="resultQuote" class="blockQuote"></p>
+                <p id="resultQuoteSpeaker" class="quoteSpeaker"></p>
+            </div>
+
+            <div id="characterPhoto">
+                
+            </div>
+
+            <div class="buttonContainer">
+            <button id="retakeQuiz02" class="bttnAnimated">Retake Quiz!</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
