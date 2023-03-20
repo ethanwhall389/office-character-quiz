@@ -119,7 +119,7 @@ const questions = [
     },
 
     {
-        "questionText": "Would you and Gabe get along with well?",
+        "questionText": "Would you and Gabe get along well?",
         "answer1": "Yes, I think we would.",
             "value1": "non-commital",
         "answer2": "Nope, never.",
